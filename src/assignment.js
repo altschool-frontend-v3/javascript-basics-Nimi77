@@ -21,6 +21,8 @@ const assignment = {};
     }
     return sum;
 }
+sumOfNumbersTo(10)
+
 assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
@@ -57,6 +59,7 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 }
+countEvenNumbersWithin(10);
 
 assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
@@ -84,6 +87,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     }
     return result;
 }
+celsiusToFahrenheit([51.21, 23, 0, -55, 100]);
 
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
