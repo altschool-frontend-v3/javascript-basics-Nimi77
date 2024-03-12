@@ -14,9 +14,9 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
- function sumOfNumbersTo(destination){
-    sum = 0;  
-    for(let i = 1; i <= destination; i++){
+function sumOfNumbersTo(destination) {
+    let sum = 0;
+    for(let i = 1; i <= destination; i++) {
         sum += i
     }
     return sum
@@ -41,13 +41,12 @@ function countEvenNumbersWithin(destination) {
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
-
-    for(let i= 1; i <= destination; i++){
-        if(i % 2 ===  0){       
-           count++
-           sum += i; 
-           arrayOfEvenNumbers.push(i)
-        }  
+    for(let i = 1; i <= destination; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+            count++;
+            arrayOfEvenNumbers.push(i)
+        }
     }
 
     return {
@@ -79,17 +78,17 @@ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-
+    
     let result = [];
-  
-    for(let i = 0; i <= arrayOfNumbers.length; i++){
-        let fTemp = Math.trunc((arrayOfNumbers[i] * 9/5)  + 32);
-        result.push(fTemp)   
+    for(let i = 0; i < arrayOfNumbers.length; i++) {
+        let fTemp = Math.trunc(arrayOfNumbers[i] * 9/5 + 32);
+        result.push(fTemp);
     }
+
     return result;
 }
-celsiusToFahrenheit([51.21, 23, 0, -55, 100])
 
+celsiusToFahrenheit([51.21, 23, 0, -55, 100])
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
