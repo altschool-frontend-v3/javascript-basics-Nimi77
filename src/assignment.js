@@ -16,8 +16,6 @@ const assignment = {};
  */
  function sumOfNumbersTo(destination){
     sum = 0;  
-    destination = 10
-
     for(i = 1; i <= destination; i++){
         sum += i
     }
@@ -41,8 +39,6 @@ function countEvenNumbersWithin(destination) {
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
-
-    destination = 10;
 
     for(i= 1; i <= destination; i++){
         if(i % 2 ===  0){       
@@ -81,8 +77,6 @@ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
     let result = [];
-    
-    arrayOfNumbers = [51.21, 23, 1, -55, 100]
   
     for(x = 0; x <= 4; x++){
         let fTemp = Math.trunc((arrayOfNumbers[x] * 9/5)  + 32);
