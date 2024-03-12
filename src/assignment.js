@@ -16,10 +16,10 @@ const assignment = {};
  */
  function sumOfNumbersTo(destination){
     sum = 0;  
-    for(i = 1; i <= destination; i++){
+    for(let i = 1; i <= destination; i++){
         sum += i
     }
-    return sum;
+    return sum
 }
 sumOfNumbersTo(10)
 
@@ -42,7 +42,7 @@ function countEvenNumbersWithin(destination) {
     let count = 0;
     let arrayOfEvenNumbers = [];
 
-    for(i= 1; i <= destination; i++){
+    for(let i= 1; i <= destination; i++){
         if(i % 2 ===  0){       
            count++
            sum += i; 
@@ -59,7 +59,7 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 }
-countEvenNumbersWithin(10);
+countEvenNumbersWithin(10)
 
 assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
@@ -79,15 +79,16 @@ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
+
     let result = [];
   
-    for(x = 0; x <= arrayOfNumbers.length; x++){
-        let fTemp = Math.trunc((arrayOfNumbers[x] * 9/5)  + 32);
+    for(let i = 0; i <= arrayOfNumbers.length; i++){
+        let fTemp = Math.trunc((arrayOfNumbers[i] * 9/5)  + 32);
         result.push(fTemp)   
     }
     return result;
 }
-celsiusToFahrenheit([51.21, 23, 0, -55, 100]);
+celsiusToFahrenheit([51.21, 23, 0, -55, 100])
 
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
